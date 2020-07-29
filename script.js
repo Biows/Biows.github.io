@@ -20,12 +20,15 @@ function inLength(a,b){
         let soma = function(a,b){return a+b}
         res.innerHTML = `A soma entre ${n1.value} e ${n2.value}
          é igual a ${soma(Number(n1.value),Number(n2.value))}`
-        }else{
+        }else if(ss[1].checked){
             let subtracao = function(a,b){return a-b}
             res.innerHTML = `A diferença entre ${n1.value} e ${n2.value}
              é igual a ${subtracao(Number(n1.value),Number(n2.value))}`
+        }else{
+            let multi = function(a,b){return a*b}
+            res.innerHTML = `O produto entre ${n1.value} e ${n2.value}
+             é igual a ${multi(Number(n1.value),Number(n2.value))}`
         }
     }
 }
-
 
