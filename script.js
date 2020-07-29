@@ -15,7 +15,6 @@ function calcular() {
         alert('[erro] Digite os dados corretamente!')
     } else {
         let ss = document.getElementsByName('somsub')
-
         if (ss[0].checked) {
             let soma = function (a, b) { return a + b }
             res.innerHTML = `A soma entre ${n1.value} e ${n2.value}
@@ -30,6 +29,7 @@ function calcular() {
              é igual a ${multi(Number(n1.value), Number(n2.value))}`
         } else if (n2.value == 0) {
             alert('[Erro] O denominador não pode ser 0 ')
+            n2.value = ''
         } else {
             let divisao = function (a, b) { return a / b }
             res.innerHTML = `O quociente entre ${n1.value} e ${n2.value}
