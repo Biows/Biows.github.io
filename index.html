@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somar e subtrair</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Somar e Subtrair</h1>
+    </header>
+
+    <section>
+        <div>
+            <p id="txtn">Digite um número:
+                <input type="number" name="num1" id="n1">
+            </p> 
+            <p>
+                Digite outro número:
+                <input type="number" name="num2" id="n2">
+            </p>
+            <p>O que deseja fazer com os números? <br>
+                <input type="radio" name="somsub" id="sum" checked>
+                <label for="sum">Somar</label>
+                <input type="radio" name="somsub" id="sub">
+                <label for="sub">Subtrair</label>
+            </p>
+                <input type="button" value="Mostrar resultado" onclick="somar()" id="btn">
+
+        </div>
+        <div id="res">
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Lucaslopespultz</p>
+    </footer>
+</body>
+</html>
